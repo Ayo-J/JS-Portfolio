@@ -25,27 +25,28 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Ayodhya Weerabahu",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
-  medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  title: "Web Designer & UI UX Designer",
+  email: "ayodhyaweerabahu@gmail.com",
+  gitHub: "lwxDbrhkgd",
+  instagram: "Ayodya JW",
+  linkedIn: "A J Weerabahu",
+  medium: "Ayodya Weerabahu",
+  twitter: "Ayodya Weerabahu",
+  youTube: "Ayodya JW",
 };
 
-const primaryColor = "#4E567E";
+const primaryColor = "#ffffff";
 const secondaryColor = "#D2F1E4";
+const accentColor = "#496c37";
 
 const App = () => {
   return (
     <div id="main">
       <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
+      <Home name={siteProps.name} title={siteProps.title} primaryColor={primaryColor}/>
       <About />
       <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Footer {...siteProps} primaryColor={accentColor} secondaryColor={secondaryColor} />
     </div>
   );
 };
